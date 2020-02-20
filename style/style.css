@@ -1,1 +1,8 @@
 /* ESTILO CSS APLICADO PARA TODO O PROJETO */
+
+:root {
+    --preto: #281713;
+    --branco: #FFF6F2;
+    --marrom: #BA8475;
+    --vermelho: #E50000;
+}
