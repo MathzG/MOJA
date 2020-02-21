@@ -35,7 +35,7 @@
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #00d0c1;
+    background: rgb(151, 142, 142);
     ;
     width: 100%;
     border: 0;
@@ -116,11 +116,9 @@ body {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(right, #12d2c5, rgb(0, 0, 0));
     background: -moz-linear-gradient(right, #12d2c5, #000000);
-    background: -o-linear-gradient(right, #21bff0, ##000000);
-    background: linear-gradient(to left, #21bff0, ##000000);
+    background: -o-linear-gradient(right, #21bff0, #000000);
+    background: linear-gradient(to left, #21bff0, #000000);
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-Resources
