@@ -1,0 +1,33 @@
+@import url('style.css');
+
+
+nav{
+    background-color: black;
+ 
+}
+
+nav 
+
+#nav-two{
+    background-color: rgb(14, 113, 170);
+   
+    
+}
+
+#nav-two ul li{
+    background-color:var (--marrom);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.div-first{
+    height: 35vw;
+    width: 100vw;
+    background-image: url("/foto1.jpg");
+}
+
+
+footer{
+    background-color: rgb(14, 113, 170) !important;
+}
