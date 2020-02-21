@@ -1,0 +1,24 @@
+@import url("style.css");
+
+body {
+    background-color: var(--preto);
+}
+
+#list {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 10em;
+    height: 10em;
+    transition: .6s;
+    background-color: var(--branco);
+}
+
+.card:hover {
+    transform: scale(1.3);
+}
