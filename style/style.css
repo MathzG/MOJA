@@ -1,9 +1,13 @@
 /* ESTILO CSS APLICADO PARA TODO O PROJETO */
 
 :root {
-    --preto: #281713;
+    --preto: #1e1e1e;
     --branco: #FFF6F2;
     --marrom: #BA8475;
     --vermelho: #E50000;
     --azul-bebe: #00d0c1;
+}
+
+body {
+    margin: 0;
 }

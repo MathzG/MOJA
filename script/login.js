@@ -4,5 +4,6 @@ $(document).ready(function(){
         var ultimoNome = $("#sobrenome").val();
         var senha = $("#senha").val();
         var repetirsenha = $("repetirsenha").val();
+        if(confirma_senha == senha){
     })
 })
