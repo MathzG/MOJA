@@ -6,7 +6,7 @@ nav{
  
 }
 
-nav 
+
 
 #nav-two{
     background-color: rgb(14, 113, 170);
@@ -24,7 +24,7 @@ nav
 .div-first{
     height: 35vw;
     width: 100vw;
-    background-image: url("/foto1.jpg");
+    background-image: url("/img/foto1.jpg");
 }
 
 
