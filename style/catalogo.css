@@ -1,7 +1,7 @@
-#product-carousel-container {
+﻿#product-carousel-container {
     position: relative;
     width: 30%;
-    margin: auto;
+    margin: auto; 
   }
   
   #product-carousel {
