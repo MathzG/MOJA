@@ -51,7 +51,7 @@
 .form button:hover,
 .form button:active,
 .form button:focus {
-    background: rgb(151, 142, 142);
+    background: var(--azul-bebe);
 }
 
 .form .message {
