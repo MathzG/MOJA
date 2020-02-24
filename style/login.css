@@ -1,17 +1,16 @@
-html,
 body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
     background: #4ECDC4;
+    background-image: url("/img/foto2.png");
+    background-size: 60vw;
+}
+
+#logo {
+    height: 7vw;
+    margin-left: 15vw;
+}
+
+#login {
+    border-radius: 50px;
 }
 
 #login-page {
@@ -21,11 +20,5 @@ body {
 .card {
     position: absolute;
     left: 50%;
-    top: 50%;
-    border-radius: 30px;
-    border-radius: 100px;
-}
-
-#login {
-    border-radius: 10px;
+    -moz-transform: translate(-50%, -50%) -webkit-transform: translate(-50%, -50%) -ms-transform: translate(-50%, -50%) -o-transform: translate(-50%, -50%) transform: translate(-50%, -50%);
 }
