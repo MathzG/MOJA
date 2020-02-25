@@ -8,7 +8,7 @@ $(document).ready(function() {
         padding: 0,
         fullWidth: true,
         indicators: true,
-        duration: 100,
+        duration: 150,
     });
     // CAROUSEL
 
