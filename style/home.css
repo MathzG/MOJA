@@ -1,9 +1,33 @@
 body {
     background: rgb(39, 109, 105);
-    background-image: url("/img/foto2.png");
+    background-image: url("../img/foto2.png");
     background-size: 60vw;
 }
 
 nav a img {
     height: 4vw;
+}
+
+nav ul a:hover {
+    background-color: rgba(247, 247, 247, 0.24)
+}
+
+#mobile-demo li a {
+    color: white;
+}
+
+.indicators {
+    background-color: black;
+    box-shadow: 0px -20px 20px 13px rgb(0, 0, 0);
+}
+
+.carousel carousel-slider {
+    box-shadow: -webkit-box-shadow: 0px -9px 11px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px -9px 11px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px -9px 11px 0px rgba(0, 0, 0, 1);
+    ;
+}
+
+.carousel-item amber darken-2 white-text {
+    background-image: url(../img/carrosel/1.jpg);
 }
