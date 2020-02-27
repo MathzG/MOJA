@@ -4,6 +4,7 @@ body {
     background-size: 60vw;
 }
 
+
 nav a img {
     height: 4vw;
 }
@@ -17,17 +18,25 @@ nav ul a:hover {
 }
 
 .indicators {
-    background-color: black;
-    box-shadow: 0px -20px 20px 13px rgb(0, 0, 0);
+   
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 19%, rgba(255,255,255,0) 100%);
+    
 }
 
 .carousel carousel-slider {
-    box-shadow: -webkit-box-shadow: 0px -9px 11px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px -9px 11px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px -9px 11px 0px rgba(0, 0, 0, 1);
-    ;
+    
+    height: 50vw;
 }
 
 .carousel-item amber darken-2 white-text {
     background-image: url(../img/carrosel/1.jpg);
+}
+
+@media screen and (max-width: 480px) {
+    .indicators{
+    background: red;
+    background: linear-gradient(0deg, rgb(245, 0, 0) 0%, rgb(235, 252, 0)) 19%, rgba(255,255,255,0) 100%;
+    }
+   
 }
