@@ -11,6 +11,8 @@ $(document).ready(function() {
         duration: 150,
         
     });
+
+    
     // CAROUSEL
 
 
