@@ -11,12 +11,24 @@ $(document).ready(function() {
         duration: 150,
         
     });
+    
+
 
     
     // CAROUSEL
 
 
     autoplay()
+    $('.dropdown-trigger').dropdown({
+        hover:true,
+        constrainWidth: true,
+        
+      
+        
+      
+    });
+    var instance = M.Dropdown.getInstance(elem);
+
 
    /* $(document).scroll(function(){
         var windowTop = $(window).scrollTop();

@@ -33,12 +33,9 @@ nav ul a:hover {
     background-image: url(../img/carrosel/1.jpg);
 }
 
-@media screen and (max-width: 480px) {
-    .indicators{
-    background: red;
-    background: linear-gradient(0deg, rgb(245, 0, 0) 0%, rgb(235, 252, 0)) 19%, rgba(255,255,255,0) 100%;
-    }
+.card-content:hover{
+    transform: scale(1.2);
+    transition: all 0.8s;
    
+
 }
-
-
