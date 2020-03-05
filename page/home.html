@@ -60,12 +60,38 @@
         <li><a href="mobile.html">Mobile</a></li>
     </ul>
 
-    <div id="modal1" class="modal">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat right "> <i class="material-icons">close</i> </a>
+    <div id="modal1" class="modal black">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat right "> <i class="material-icons white-text">close</i> </a>
         <div class="modal-content">
             
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
+            <div class="col s12 z-depth-6 card-panel black" id='login'>
+                <form class="login-form black">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">mail_outline</i>
+                            <input class=" white-text"id="email" type="email">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">lock_outline</i>
+                            <input id="password" type="password" class="input white-text">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light col s12" id="botao" disabled="false">Login</button>
+                        </div>
+                    </div>
+
+    
+                </form>
+            </div>
         </div>
         
       </div>
@@ -249,6 +275,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js ">
     </script>
     <script src="../script/home.js "></script>
+    <script src="../script/login.js"></script>
 </body>
 
 </html>
