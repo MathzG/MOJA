@@ -38,3 +38,30 @@ function Vazio (campo){
         return false;
     }
 }
+
+
+
+//CADASTRO!!!
+
+$(document).ready(function(){
+
+
+	$("#botao").click(function(){
+		fComServidor();
+	});
+
+});
+
+function fComServidor(){
+
+	$.ajax({
+		data: {
+            name: $("#name").val(),
+            last_name: $("#last_name").val(),
+            email: $("#email").val(),
+            password: $("#password").val(),
+		},
+		type: "POST",
+		url: '../php/cadastro.php'
+	});
+}
