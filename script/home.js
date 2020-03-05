@@ -11,6 +11,7 @@ $(document).ready(function() {
         duration: 150,
         
     });
+    $('.modal').modal();
     
 
 
@@ -39,7 +40,8 @@ $(document).ready(function() {
             $('#nav').removeClass('efect-nav');
         }
     })*/
-
+   
+    
 
 
 
