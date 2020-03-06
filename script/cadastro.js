@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $('#email').keyup(verificar);
     $('#name').keyup(verificar);
@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 });
 
-function verificar (){
+/*function verificar (){
     
    var nome = $("#name").val();
    var sobrenome = $("#last_name").val();
@@ -18,12 +18,12 @@ function verificar (){
    var valid = $("#email").hasClass("validate valid") ;
 
 
-   if( nome != "" && nome != null && sobrenome != "" && sobrenome!= null && email != "" && email != null && senha != "" && senha!= null && confirmasenha != "" && confirmasenha != null ){
-       $("#botao").prop("disabled", false);
-   }
-   else{
-       $("#botao").prop("disabled",true);
-   }
+   //if( nome != "" && nome != null && sobrenome != "" && sobrenome!= null && email != "" && email != null && senha != "" && senha!= null && confirmasenha != "" && confirmasenha != null ){
+   //    $("#botao").prop("disabled", false);
+  // }
+  // else{
+  //     $("#botao").prop("disabled",true);
+  // }
   
 
     
@@ -38,7 +38,7 @@ function Vazio (campo){
         return false;
     }
 }
-
+*/
 
 
 //CADASTRO!!!
@@ -47,7 +47,8 @@ $(document).ready(function(){
 
 
 	$("#botao").click(function(){
-		fComServidor();
+        fComServidor();
+        return false;
 	});
 
 });
@@ -59,7 +60,7 @@ function fComServidor(){
             name: $("#name").val(),
             last_name: $("#last_name").val(),
             email: $("#email").val(),
-            password: $("#password").val(),
+            password: $("#password").val()
 		},
 		type: "POST",
 		url: '../php/cadastro.php'
