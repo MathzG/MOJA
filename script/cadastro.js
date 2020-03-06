@@ -47,7 +47,7 @@ function Vazio (campo){
 $(document).ready(function(){
 
 
-	$("#password2Confirm").click(function(){
+	$("#botaoCadastro").click(function(){
         fComServidor();
         return false;
 	});
