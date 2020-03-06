@@ -48,6 +48,13 @@ $(document).ready(function(){
 
 
 	$("#botaoCadastro").click(function(){
+        var nome = $("#name2").val();
+   var sobrenome = $("#last_name2").val();
+   var email = $("#email2").val();
+   var senha = $("#password2_2").val();
+   var confirmasenha = $("#password2Confirm").val();
+
+   alert(nome+sobrenome+email+senha+confirmasenha)
         fComServidor();
         return false;
 	});
