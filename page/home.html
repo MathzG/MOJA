@@ -29,7 +29,7 @@
 
             <ul class=" right hide-on-med-and-down ">
                 <button data-target="modal1" class="btn modal-trigger">Entrar</button>
-                <button data-target="modal1" class="btn modal-trigger">Registrar-se</button>
+                <button data-target="modal2" class="btn modal-trigger teal darken-4 ">Registrar-se</button>
                 
                <!-- <a data-target="modal1" class="waves-effect waves-light btn black-text btn modal-trigger" ><i class="material-icons left ">person</i>Entrar</a>-->
             </ul>
@@ -43,8 +43,8 @@
     </nav>
 </div>
     
-    <ul class="sidenav black white-text" id="mobile-demo">
-        <li>
+    <ul class="sidenav white-text" id="mobile-demo">
+       <!-- <li>
             <div class=" user-view ">
                 <div class="background teal ">
     
@@ -53,22 +53,27 @@
                 <a href="#name "><span class="white-text name ">John Doe</span></a>
                 <a href="#email "><span class="white-text email ">jdandturk@gmail.com</span></a>
             </div>
-        </li>
+        </li>--> <li>  <button data-target="modal1" class="btn modal-trigger">Entrar</button>
+           </li>
+           <li> <button data-target="modal2" class="btn modal-trigger teal darken-4 ">Registrar-se</button></li>
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+       
     </ul>
 
-    <div id="modal1" class="modal black">
+    <div id="modal1" class="modal transparent">
+       
         <a href="#!" class="modal-close waves-effect waves-green btn-flat right "> <i class="material-icons white-text">close</i> </a>
         <div class="modal-content">
+          
             
-            <div class="col s12 z-depth-6 card-panel black" id='login'>
-                <form class="login-form black">
+            <div class="col s12 z-depth-6 card-panel transparent" id='login'>
+               
                     <div class="row">
+                        
                     </div>
                     <div class="row">
+                        
                         <div class="input-field col s12">
                             <i class="material-icons prefix white-text">mail_outline</i>
                             <input class=" white-text"id="email" type="email">
@@ -90,11 +95,66 @@
                     </div>
 
     
-                </form>
+               
             </div>
         </div>
         
-      </div>
+    </div>
+
+    <div id="modal2" class="modal transparent">
+       
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat right "> <i class="material-icons white-text">close</i> </a>
+        <div class="modal-content">
+            
+            <div class="col s12 z-depth-6 card-panel transparent" id='login'>
+               
+                    <div class="row">
+                    </div>
+                    <div class="row">
+
+                        <div class="input-field col s12 ">
+                            <i class="material-icons prefix white-text">account_circle</i>
+                            <input class="validate white-text" id="name2" type="text">
+                            <label for="name" data-error="wrong" data-success="right">Nome</label>
+                        </div>
+                        <div class="input-field col s12 ">
+                            <i class="material-icons prefix white-text">account_circle</i>
+                            <input class="validate white-text" id="last_name2" type="text">
+                            <label for="last_name" data-error="wrong" data-success="right">Sobrenome</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">mail_outline</i>
+                            <input class="validate white-text" id="email2" type="email">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">lock_outline</i>
+                            <input id="password2_2" type="password" class="validate white-text">
+    
+                            <label for="password">Senha</label>
+    
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix white-text">lock_outline</i>
+                            <input id="password2Confirm" type="password" class="a white-text">
+                            <label for="password">Confirmar senha</label>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light col s12" id="botaoCadastro" disabled="false">Registrar-se</button>
+                        </div>
+                    </div>
+                   
+           
+        </div>
+        
+    </div></div>
               
 
    
@@ -276,6 +336,7 @@
     </script>
     <script src="../script/home.js "></script>
     <script src="../script/login.js"></script>
+    <script src="../script/cadastro.js"></script>
 </body>
 
 </html>

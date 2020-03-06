@@ -11,7 +11,11 @@ $(document).ready(function() {
         duration: 150,
         
     });
-    $('.modal').modal();
+    $('.modal').modal({
+        opacity: 0.9
+    }
+        
+    );
     
 
 
