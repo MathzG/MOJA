@@ -1,4 +1,4 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
 
     $('#email2').keyup(verificar);
     $('#name2').keyup(verificar);
@@ -8,7 +8,7 @@
 
 });
 
-/*function verificar (){
+function verificar (){
     
    var nome = $("#name2").val();
    var sobrenome = $("#last_name2").val();
@@ -39,7 +39,7 @@ function Vazio (campo){
         return false;
     }
 }
-*/
+
 
 
 //CADASTRO!!!
@@ -47,7 +47,7 @@ function Vazio (campo){
 $(document).ready(function(){
 
 
-	$("#botao").click(function(){
+	$("#password2Confirm").click(function(){
         fComServidor();
         return false;
 	});
@@ -58,10 +58,10 @@ function fComServidor(){
 
 	$.ajax({
 		data: {
-            name: $("#name").val(),
-            last_name: $("#last_name").val(),
-            email: $("#email").val(),
-            password: $("#password").val()
+            name: $("#name2").val(),
+            last_name: $("#last_name2").val(),
+            email: $("#email2").val(),
+            password: $("#password2_2").val()
 		},
 		type: "POST",
 		url: '../php/cadastro.php'
