@@ -71,6 +71,12 @@ function fComServidor(nm,lt_nm,em,pass){
             password: pass
 		},
 		type: "POST",
-		url: '../php/cadastro.php'
+        url: '../php/cadastro.php',
+        success: function(response){
+
+        },
+        error: function(response){
+            
+        }
 	});
 } 
