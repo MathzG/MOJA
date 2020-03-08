@@ -5,6 +5,9 @@ $(document).ready(function() {
     $('#last_name2').keyup(verificar);
     $('#password2_2').keyup(verificar);
     $('#password2Confirm').keyup(verificar);
+    $('#password2Confirm').change(verificarSenha);
+    $('#password2_2').change(verificarSenha);
+  
 
     $("#botaoCadastro").click(function(){
         var nome = $("#name2").val();
@@ -13,8 +16,10 @@ $(document).ready(function() {
         var senha = $("#password2_2").val();
         var confirmasenha = $("#password2Confirm").val();
 
-        alert(nome+sobrenome+email+senha+confirmasenha)
-        fComServidor(nome,sobrenome,email,senha);
+        var senhaHash = $.MD5(senha);
+
+        alert(nome+sobrenome+email+senhaHash+confirmasenha);
+        fComServidor(nome,sobrenome,email,senhaHash);
        // return false;
 	});
 
@@ -34,7 +39,7 @@ function verificar (){
 
 
 
-   if( nome != "" && nome != null && sobrenome != "" && sobrenome!= null && email != "" && email != null && senha != "" && senha!= null && confirmasenha != "" && confirmasenha != null ){
+   if( nome != "" && nome != null && sobrenome != "" && sobrenome!= null && email != "" && email != null && senha != "" && senha!= null && confirmasenha != "" && confirmasenha != null && senha == confirmasenha){
        $("#botaoCadastro").prop("disabled", false);
    }
    else{
@@ -43,6 +48,22 @@ function verificar (){
 
   
     
+}
+
+
+function verificarSenha(){
+
+    var senhaVerifica = $("#password2_2").val();
+    var senhaVerificaComfirm = $("#password2Confirm").val();
+
+    if(senhaVerifica != senhaVerificaComfirm){
+        $("#password2_2").addClass(" validate white-text invalid");
+        $("#password2Confirm").addClass(" validate white-text invalid");
+    }
+    else{
+        $("#password2_2").addClass(" validate white-text valid");
+        $("#password2Confirm").addClass(" validate white-text valid");
+    }
 }
 
 function Vazio (campo){
