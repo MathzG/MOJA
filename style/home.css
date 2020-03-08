@@ -3,6 +3,7 @@ body {
     background-image: url("../img/foto2.png");
     background-size: 60vw;
    
+   
 }
 
 
@@ -52,3 +53,14 @@ nav ul a:hover {
 #mobile-demo{
     background-color: #00000091;
 }
+
+
+#a ul a{
+    color: white !important;
+}
+
+.table-of-contents a{
+   color: white;
+   font-size: 01.3vw;
+}
+
