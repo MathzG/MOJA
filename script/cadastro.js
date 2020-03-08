@@ -6,6 +6,21 @@ $(document).ready(function() {
     $('#password2_2').keyup(verificar);
     $('#password2Confirm').keyup(verificar);
 
+    $("#botaoCadastro").click(function(){
+        var nome = $("#name2").val();
+        var sobrenome = $("#last_name2").val();
+        var email = $("#email2").val();
+        var senha = $("#password2_2").val();
+        var confirmasenha = $("#password2Confirm").val();
+
+        alert(nome+sobrenome+email+senha+confirmasenha)
+        fComServidor(nome,sobrenome,email,senha);
+       // return false;
+	});
+
+
+
+
 });
 
 function verificar (){
@@ -44,33 +59,18 @@ function Vazio (campo){
 
 //CADASTRO!!!
 
-$(document).ready(function(){
 
 
-	$("#botaoCadastro").click(function(){
-        var nome = $("#name2").val();
-   var sobrenome = $("#last_name2").val();
-   var email = $("#email2").val();
-   var senha = $("#password2_2").val();
-   var confirmasenha = $("#password2Confirm").val();
-
-   alert(nome+sobrenome+email+senha+confirmasenha)
-        fComServidor();
-        return false;
-	});
-
-});
-
-function fComServidor(){
+function fComServidor(nm,lt_nm,em,pass){
 
 	$.ajax({
 		data: {
-            name: $("#name2").val(),
-            last_name: $("#last_name2").val(),
-            email: $("#email2").val(),
-            password: $("#password2_2").val()
+            name: nm,
+            last_name: lt_nm,
+            email:em,
+            password: pass
 		},
 		type: "POST",
 		url: '../php/cadastro.php'
 	});
-}
+} 
