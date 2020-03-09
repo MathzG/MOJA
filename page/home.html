@@ -10,6 +10,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../style/home.css">
+    <script src=" https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <script src="../script/jquery.md5.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js ">
+    </script>
+    <script src="../script/home.js "></script>
+    <script src="../script/login.js"></script>
+    <script src="../script/cadastro.js"></script>
 </head>
 
 <body>
@@ -110,19 +118,17 @@
         <a href="#!" class="modal-close waves-effect waves-green btn-flat right "> <i class="material-icons white-text">close</i> </a>
         <div class="modal-content">
             
-            <div class="col s12 z-depth-6 card-panel transparent" id='login'>
+            <div class="col s12  z-depth-6 card-panel transparent" id='login'>
                
-                   <div class="row">
-                       <center class="white-text">Registre-se</center>
-                   </div>
-                    <div class="  row">
+                   
+                    <div class="row">
 
-                        <div class="input-field col s12 ">
+                        <div class="input-field col l6 s12 ">
                             <i class="material-icons prefix white-text">account_circle</i>
                             <input class="validate white-text" id="name2" type="text">
                             <label for="name" data-error="wrong" data-success="right">Nome</label>
                         </div>
-                        <div class="input-field col s12 ">
+                        <div class="input-field col l6 s12 ">
                             <i class="material-icons prefix white-text">account_circle</i>
                             <input class="validate white-text" id="last_name2" type="text">
                             <label for="last_name" data-error="wrong" data-success="right">Sobrenome</label>
@@ -136,25 +142,24 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
+                        <div class="input-field col l6 s12">
                             <i class="material-icons prefix white-text">lock_outline</i>
                             <input id="password2_2" type="password" class="validate white-text">
     
                             <label for="password">Senha</label>
     
                         </div>
-                        <div class="input-field col s12">
+                        <div class="input-field col l6 s12">
                             <i class="material-icons prefix white-text">lock_outline</i>
                             <input id="password2Confirm" type="password" class="a white-text">
                             <label for="password">Confirmar senha</label>
                         </div>
-                    </div>
-    
-                    <div class="row">
                         <div class="input-field col s12">
                             <button class="btn waves-effect waves-light col s12" id="botaoCadastro" disabled="false">Registrar-se</button>
                         </div>
                     </div>
+    
+                   
                    
            
         </div>
@@ -338,13 +343,7 @@
 
 
 
-    <script src=" https://code.jquery.com/jquery-3.4.1.min.js ">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js ">
-    </script>
-    <script src="../script/home.js "></script>
-    <script src="../script/login.js"></script>
-    <script src="../script/cadastro.js"></script>
+   
 </body>
 
 </html>

@@ -64,3 +64,11 @@ nav ul a:hover {
    font-size: 01.3vw;
 }
 
+.modal{
+    max-height: 100% !important;
+}
+
+.card-panel{
+    -webkit-box-shadow:none;
+    box-shadow: none ;
+}

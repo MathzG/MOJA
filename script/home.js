@@ -33,7 +33,7 @@ $(document).ready(function() {
         
       
     });
-    var instance = M.Dropdown.getInstance(elem);
+   
 
 
    /* $(document).scroll(function(){
