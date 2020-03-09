@@ -1,9 +1,9 @@
 <?php
 
-    $name = $_POST["nm"];
-    $last_name = $_POST["lt_nm"];
-    $email = $_POST["em"];
-    $password = $_POST["pass"];
+    $name = $_POST["name"];
+    $last_name = $_POST["last_name"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
 	$conexao = mysqli_connect("localhost:8889", "root", "root", "teste_moja");
 
