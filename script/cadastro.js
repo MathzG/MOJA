@@ -64,6 +64,8 @@ function verificarSenha(){
         $("#password2_2").addClass(" validate white-text valid");
         $("#password2Confirm").addClass(" validate white-text valid");
     }
+
+    
 }
 
 function Vazio (campo){
