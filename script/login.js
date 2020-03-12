@@ -29,24 +29,24 @@ function verificarLogin(){
 function Login(){
     var email =  $("#email").val();
     var senha =  $("#password").val();
-    alert(email+senha);
+    //alert(email+senha);
  
-    var senhaHash =$.MD5(senha);
+   // var senhaHash =$.MD5(senha);
  
     $.ajax({
         data:{
             email:email,
-            senha:senhaHash
+            senha:senha
         },
         type:'POST',
         url: '../php/login.php',
         success: function(response){
             if(response == false){
-                $("#text-login").html('Login ou Senha incorreto !!');
+                $("#text-login").html('Login ou Senha incorreto !');
             }
         },
         error: function(response){
-             $("#text-login").html('Login ou Senha incorreto !!');
+             $("#text-login").html('Login ou Senha incorreto!');
         }
     });
  
